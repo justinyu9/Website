@@ -1,0 +1,103 @@
+
+body {
+    background: linear-gradient( rgba(0, 0, 50, 10.5), rgba(0, 0, 0, 0.5) ), url("Background.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+
+
+}
+img {
+    border-radius: 15px;
+}
+h1 {
+    color: white;
+    transition-delay: 2s;
+    font-family: sans-serif;
+}
+
+p {
+    color: white;
+    font-family: sans-serif;
+}
+
+div{
+
+    color: white;
+    font size="5";
+    font-family: sans-serif;
+}
+hr{
+    color: white;
+}
+.button {
+    font-size: ="2";
+    display: inline;
+    border-radius: 150px;
+    backface-visibility: hidden;
+    background-color: Transparent;
+    border: 2px solid white ;
+    border-width:1px;
+    color: white;
+    padding: 20px 80px;
+    text-align: center;
+    text-decoration: black;
+    font-size: 16px;
+    transition: padding 1s; 
+}
+
+.button:focus {outline:0;}
+
+.img:focus {outline:0;}
+
+.button:hover {
+    background-color: white; 
+    color: black;
+    padding: 25px 90px;
+}
+
+
+.fade-in{
+    animation: fadeIn 2s;
+
+}
+
+.fade-in1{
+    
+    animation: fadeIn 2s;
+}
+
+.fade-in2{
+    
+    animation: fadeIn 2s;
+}
+
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+    
+}
+
+li{
+    padding: 0px 0px 10px 0px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
