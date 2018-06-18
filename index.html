@@ -1,145 +1,327 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
+
 <head>
-<link rel="stylesheet" href="websitestyle.css">
-
-<title>Home</title>
-    
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="stylesheets/index.css">    
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Justin Yu</title>
+    <link rel="icon" type="image/png" href="images/letterJ.jpg">
+    <link rel="shortcut icon" type="image/png" href="images/letterJ.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-  
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href=#>Home</a></li>
-        <li ><a href= work.html>Work Experience</a></li>
-        <li><a href=projects.html>Projects</a></li>
-        <li><a href="JustinYuResume.pdf" target="_blank">Resume</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow" style="background-color:rgba(0, 0, 0, 0.6)">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-      </ul>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Justin Yu</h1>
+            <h2 style=color:white>Software Engineer</h2>
+            <a href="images/resume.pdf" target="_blank" class="btn-rounded-white">Open Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
     </div>
-  </div>
-</nav>
-    
-    
-    
-    
-    <center>
+    <!-- End #lead -->
 
-    <div class = 'maintitle'><p><center><font size="7"><br>Welcome!</font>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <center><h2 class="heading">About Me</h2></center>
+                    <center><img src="images/Me.jpg"  width="200" height="200" /></center>
+                </div>
+                <div class="col-md-8">
+                    <br><br>
+                    <p>Hey I'm Justin!</p><br>
+                    <p>I love to develop algorithms and make applicable projects to ease the world and make our society a better place. I love to work on projects with my friends, and learn more everyday to improve what I can do. </p><br>
+                    <p>Being a programmer for 5 years now, I am excited to learn and experiment in AI, Virtual Reality, Augmented Reality, and Machine Learning!</p><br>
+                    <p>Contact me below and we can grab coffee or boba, maybe I can spoil you with my puns because trust me I got a latte of them &#x1F602</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="July 2018 – September 2018">
+                <h3>Alarm.com</h3>
+                <h4>Software Engineer Intern</h4>
+                <img src="images/alarm2.jpg"  width="300" height="200" />
+                <ul>
+                    <li>Innovating and improving existing products.</li>
+                    <li>Taking ownership of projects to ensure their successful completion with respect to deadlines.</li>
+                    <li>Collaborating with Quality Assurance in developing a test plan to ensure successful deployment of
+                        updates.</li>
+                </ul>
+            </div>
+
+            <div data-date="September 2017 – June 2018">
+                <h3>University of California, Santa Cruz</h3>
+                <h4>Undergraduate Research Assistant</h4>
+                <img src="images/thakurta2.jpg"  width="300" height="200" />
+                <ul>
+                    <li>Studied under Professor Abhradeep Guha Thakurta.</li>
+                    <li>Analyze research papers relating to data privacy.</li>
+                    <li>Studied proofs for optimizing data privacy.</li>
+                    <li>Working with data privacy and predictive text.</li>
+                    <li>Weekly meetings with Graduate Research Assistants to discuss theorems and proofs regarding data privacy.</li>
+                </ul>
+            </div>
+
+            <div data-date="June 2017 – August 2017">
+                <h3>iD Tech</h3>
+                <h4>Computer Science Instructor</h4>
+                <img src="images/idTech.png"  width="300" height="200" />
+                <ul>
+                    <li>Made weekly lesson plans and modified course to fit students’ needs.</li>
+                    <li>Mentored each student to create individual projects by the end of each weekly session. </li>
+                    <li>Taught high school students (ages 13-17) C++, Python, Java, HTML, CSS, Javascript, Assembly, and BASIC.</li>
+                </ul>
+                <h5>Reference Quotes</h5>
+                <p><b>Amber Kantner (Director of Santa Clara iD Tech Camps)</b> - "Justin Yu's programming skills really shone through his engaging lessons, and his enthusiasm for all aspects of camp made him a great addition to our team."</p>
+                <p><b>Brandon Zwier (Assistant Director of Santa Clara iD Tech Camps)</b> - "Justin Yu worked as a wonderful teacher and mentor, and helped raise staff morale in any way he could. Punctual and hardworking, Justin made a fantastic addition to our team."</p>
+                <p><b>Brittney Nicole (Director of San Jose iD Tech Camps)</b> - "Justin was a top performer at camp, he always went above and beyond to ensure the success of his students and brought a positive energy into work every morning!"</p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of California, Santa Cruz</h3>
+            <span class="education-date">Sept 2015 - June 2019 (expected)</span>
+            <h4>Bachelor of Science in Computer Science <br>GPA: 3.63/4.00</h4>
+            <p>Courses Finished</p>
+            <ul style="margin-left:5%">
+                <li>CMPS 10 : Introduction to Computer Science</li>
+                <li>CMPS 12A : Introduction to Programming (Accelerated)</li>
+                <li>CMPS 12B : Introduction to Data Structures</li>
+                <li>CMPS 101 : Algorithms and Abstract Data Types</li>
+                <li>CMPS 102 : Introduction to Analysis of Algorithms</li>
+                <li>CMPS 111 : Introduction to Operating Systems</li>
+                <li>CMPS 112 : Comparative Programming Languages</li>
+                <li>CMPS 115 : Introduction to Software Engineering</li>
+                <li>CMPS 121 : Mobile Applications</li>
+                <li>CMPS 130 : Computational Model</li>
+                <li>CMPS 180 : Database Systems I</li>
+                <li>CMPS 183 : Web Applications</li>
+            </ul>
+            <br>
+            <ul style="margin-left:5%">
+                <li>CMPE 12 : Computer Systems and Assembly Language</li>
+                <li>CMPE 16 : Applied Discrete Mathematics</li>
+                <li>CMPE 107 : Probability and Statistics for Engineers</li>
+                <li>CMPE 110 : Computer Architecture</li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/Finder.png" width="300" height="200"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3><b>Finder</b> - Full Stack</h3>
+                        <p>
+                            Web Application that allows users to report lost and found items. Users can make an account and data will be stored in a database. I worked on the Search Bar, forms, and storing inormation into a database. Also helped with styling, and the Google Map API. Used Web2py, Vue.js, SQL, Python, Javascript, and HTML/CSS. 
+                        </p>
+                        <a href="https://dawaaadeee3.pythonanywhere.com/Finder/default/index" target="_blank">View Project</a>&emsp;<a href="https://github.com/janeshchhabra/Finder" target="_blank">Github</a>&emsp;<a href="https://docs.google.com/presentation/d/17c1WU1CxKckKLAvY3ddgNgXNOmGcAE-iEYTo4MWduc0/edit?usp=sharing" target="_blank">Details</a>
         
-        </center>
-<br><br><br>
-   <div style='float:center;'>
-    <div class='fade-in1' style='float:left; width:50%'>
-<img src="Me3.jpg"  width="400" height="400" />
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/ripple.png" width="300" height="200"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3><b>Ripple</b> - Backend</h3>
+                        <p>
+                            Web Application whose goal is to connect the youth with politics. Pulled data from Propublica API, and stored information into a database using Node.js, express and SQL. Used Scrum metholdology for team efficiency.
+                        </p>
+                        <a href="https://docs.google.com/presentation/d/1yM9IMSvKFKGr-2xZB6AhVWQLdsA0OcovS92hH7HffVU/edit?usp=sharing" target="_blank">Github</a>&emsp;<a href="https://docs.google.com/presentation/d/1yM9IMSvKFKGr-2xZB6AhVWQLdsA0OcovS92hH7HffVU/edit?usp=sharing" target="_blank">Details</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/focus.png" width="300" height="200"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3><b>Focus</b> - Full Stack</h3>
+                        <p>
+                            Mobile Application designed to help students focus on assignments. Awards a "Pokemon" for each finshed task based on assignment difficulty and length of time for completion. Coded mainly in Java, and developed algorithms to rank assignment priority.
+                        </p>
+                        <a href="https://github.com/justinyu9/Focus" target="_blank">Github</a>&emsp;<a href="https://docs.google.com/document/d/13HXrlbtIdNr9dYNsUofpHufm2tWQBnnLn_NJxi0oqhI/edit?usp=sharing" target="_blank">Details</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                    <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/Travel.png" width="300" height="200"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3><b>Travel-Chatbot</b> - Full Stack</h3>
+                        <p>
+                            Project for CalHacks(2016). Used Amadeus API to calculate cheapest flight for users with given input. Used JavaScript, HTML/CSS. Simulated an AI like interaction to make it easy for users to intearct with the Web Application.
+                        </p>
+                        <a href="https://github.com/justinyu9/Travel-Chatbot" target="_blank">GitHub</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                    <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/DormHacks.png" width="300" height="200"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3><b>DormHacks</b> - Full Stack</h3>
+                        <p>
+                            Project for HackDavis(2016). Web Application for college students to sell things to one another. Used Firebase to store data for users. Users were able to signup and login. Used bootstrap, HTML/CSS to design the page.
+                        </p>
+                        <a href="https://github.com/justinyu9/DormHacks" target="_blank">GitHub</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- End #projects -->
 
-    <div class='fade-in1' style='float:left; width:40%'>
-<p><font size="7"><br>Hi! I'm Justin Yu</font></p>
-    <p><font size="5"><br>A self driven  and passionate student in Computer Science at UC Santa Cruz</font></p>
-    </div> 
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>Node.JS</li>
+            <li>Vue.JS</li>
+            <li>Web2Py</li>
+            <li>CSS</li>
+            <li>Assembley</li>
+            <li>FireBase</li>
+            <li>Scrum</li>
+            <li>Agile</li>
+            <li>Express</li>
+            <li>React</li>
+            <li>Unix</li>
+            <li>Android Studios</li>
+            <li>GitHub</li>
+        </ul>
     </div>
+    <!-- End #skills -->
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    
-    <h1 class='fade-in'><font size="7"><br>About Me </font></h1>
-    <br>
-    <div class='fade-in' style='float:left; width:50%;'>
-    <font size="6"><br><br>Education </font>
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/justinyu9@yahoo.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
     </div>
-</center>
-      <font size="5">  
-    <div class='fade-in' style='float:left; width:40%; margin-left:30px; margin-top:30px'>
-    <p><br>Bachelor of Science - Computer Science </p>
-    <p>Univeristy of California -  Santa Cruz </p>
-     <ul style="list-style-type:disc">
-  <li><b>Current GPA:</b> 3.66/4.00</li>
-  <li><b>Projected Graduation:</b> 2019</li>
-  <li><b>Honors:</b> Dean's Honors</li> 
-  <li> <b>Relevant Coursework:</b> Intro to Java Accelerated, Data Structures, Algorithms and Abstract Data Types, Computer Systems and Assembly Language, Computer Architecture, Introduction to Analysis of Algorithms, Computational Models, Introduction to Software Engineering, Mobile Applications</li>
-</ul>  
-    </div> 
-    </font>
-    <center>
-    <div class='fade-in' style='float:left; width:50%'>
-    <font size="6"><br>Technical Skills </font>
-    </div>
-    </center> 
+    <!-- End #contact -->
 
-    <div class='fade-in'  style='float:left; width:40%; margin-left:30px; margin-top:20px'>
-    <p> 
-          <font size="5">  
-<ul style="list-style-type:disc">
-    
-  <li><b>Programming:</b> Java, C, C++, Python, HTML, JavaScript, Node.js, CSS, Assembly, PHP, Commodore BASIC, Express</li>
-  <li><b>Database :</b> Firebase, SQL, MongoDB</li>
-  <li><b>Software:</b> Microsoft Office, Notepad++, Sublime Text, LC3Edit, Brackets, Android Studio, Latex, Visual Studios, IDLE, Eclipse</li> 
-  <li><b>Operating Systems:</b> Windows 10, Windows XP, Android, iOS, OSX, UNIX </li> 
-  <li><b>Team Skills:</b> Scrum</li> 
-  <li><b>Frameworks:</b> Express, React</li> 
-</ul>  
-        
-        </font>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2017 Justin Yu
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/justinyu9" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/jubyu/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/justin.e.yu.9" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
 
-    </div> 
-    <center>
-    <div class='fade-in' style='float:left; width:50%'>
-    <font size="6"><br>Hobbies </font>
-    </div>
-    </center> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
 
-    <div class='fade-in' style='float:left; width:40%; margin-left:30px'>
-        
-<br>
-        
-  <font size="5">      
-<ul style="list-style-type:disc">
-    
-  <li>Playing the guitar as a source of peace.</li>
-  <li>Adventuring out to new places, exploring new landmarks and hidden gems.</li>
-  <li>Trying and eating new foods.</li> 
-  <li>Playing basketball, badminton, ultimate frisbee, and most team games. </li> 
-  <li>Spending time with loved ones.</li> 
-  <li>Personal goal to solve one riddle a day.</li> 
-</ul>  
-        </font>
-
-    </div> 
-
-    
-    <div class='fade-in' style='float:left; width:100%; margin-top:px'> 
-      <center>  
-<p><font size="7"><br>Contact Me! </font></p>
-    <br><br>
-
-
-    
-  <p>justinyu9@yahoo.com</p>
-  <p>(408)-833-2630</p>
-
-          <br><br><br><br><br><br><br><br>
-          </center>
-    </div>
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
 
 </html>
