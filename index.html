@@ -87,7 +87,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <center><h2 class="heading">About Me</h2></center>
-                    <center><img src="images/Me.jpg"  width="200" height="200" /></center>
+                    <center><img src="images/Me2.png"  width="200" height="200" /></center>
                 </div>
                 <div class="col-md-8">
                     <br><br>
@@ -104,15 +104,27 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
+            <div data-date="September 2018 – December 2018">
+                <h3>Cisco Systems</h3>
+                <h4>Software Development Intern</h4>
+                <img src="images/Cisco.jpg"  width="300" height="200" />
+                <ul>
+                    <li>Registered devices automatically using Jenkins and Python to Cisco Spark so infrastructure team does not have to manually register them after device updates.</li>
+                    <li>Used Cobbler to create virtual machines and update servers to provide others accessibility to a virtual machine when they need it.</li>
+                    <li>Created automated scripts using Ansible to install OpenStack and AWS so others can run a script to automatically configure these cloud platform settings</li>
+                    <li>Created a script that allows others to create instances and VLANs in a OpenStack Cloud Platform that route and communicate to each other properly.</li>
+                </ul>
+            </div>
+            
             <div data-date="July 2018 – September 2018">
                 <h3>Alarm.com</h3>
-                <h4>Software Engineer Intern</h4>
+                <h4>Software Engineering Intern</h4>
                 <img src="images/Alarm.jpg"  width="150" height="200" style="margin-left:5%" />
                 <ul>
-                    <li>Wrote unit tests in C\# to check backend SQL database returns function calls properly</li>
+                    <li>Wrote unit tests in C# and SQL scripts to check if backend SQL database returns function calls properly.</li>
                     <li>Refined ember add-ons by deleting devDependencies which will decrease build/compile time of programs by up to 80%.</li>
-                    <li>Configured formatting using Prettier which reformats code on save.</li>
-                    <li>Enhanced User Interaction on Customer and Dealer Page by using Ember.js and C#</li>
+                    <li>Configured formatting using a code formatter called Prettier so other programmers can code without worrying about code formats.</li>
+                    <li>Enhanced User Interaction on Customer and Dealer Page by using Ember.js and C#, impacting many daily customers.</li>
                 </ul>
             </div>
 
@@ -121,10 +133,10 @@
                 <h4>Undergraduate Research Assistant</h4>
                 <img src="images/thakurta2.jpg"  width="300" height="200" />
                 <ul>
-                    <li>Studied under Professor Abhradeep Guha Thakurta.</li>
+                    <li>Researched under Professor Abhradeep Guha Thakurta.</li>
                     <li>Analyze research papers relating to data privacy.</li>
-                    <li>Studied proofs for optimizing data privacy.</li>
-                    <li>Working with data privacy and predictive text.</li>
+                    <li>Coordinated with Professor to further my understanding and study his work.</li>
+                    <li>Working with local differential data privacy.</li>
                     <li>Weekly meetings with Graduate Research Assistants to discuss theorems and proofs regarding data privacy.</li>
                 </ul>
             </div>
@@ -152,7 +164,7 @@
         <div class="education-block">
             <h3>University of California, Santa Cruz</h3>
             <span class="education-date">Sept 2015 - June 2019 (expected)</span>
-            <h4>Bachelor of Science in Computer Science <br>GPA: 3.63/4.00</h4>
+            <h4>Bachelor of Science in Computer Science <br>GPA: 3.57/4.00</h4>
             <p>Courses Finished</p>
             <ul style="margin-left:5%">
                 <li>CMPS 10 : Introduction to Computer Science</li>
@@ -165,6 +177,8 @@
                 <li>CMPS 115 : Introduction to Software Engineering</li>
                 <li>CMPS 121 : Mobile Applications</li>
                 <li>CMPS 130 : Computational Model</li>
+                <li>CMPS 142 : Machine Learning and Deep Learning</li>
+                <li>CMPS 144 : Applied Machine Learning</li>
                 <li>CMPS 180 : Database Systems I</li>
                 <li>CMPS 183 : Web Applications</li>
             </ul>
@@ -174,6 +188,14 @@
                 <li>CMPE 16 : Applied Discrete Mathematics</li>
                 <li>CMPE 107 : Probability and Statistics for Engineers</li>
                 <li>CMPE 110 : Computer Architecture</li>
+                <li>CMPE 150 : Introduction to Computer Networks</li>
+            </ul>
+            <br>
+            <ul style="margin-left:5%">
+                <li>TIM 50 : Business Information Systems</li>
+                <li>TIM 80C : Starting a New Technology Company</li>
+                <li>TIM 105 : Introduction to Management of Technology I</li>
+                <li>TIM 125 : Introduction to Management of Technology II</li>
             </ul>
         </div>
         <!-- End .education-block -->
@@ -185,6 +207,36 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/144_results.jpg" width="300" height="200" onclick="window.open(this.src)"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3><b>Logo Detector</b> - Backend</h3> 
+                        <p>
+                            Machine learning model that given an input of an image containing a logo of a company, the model will blur it out in real time. Model was based on a CNN (Convolutional Neural Network) that was inspired by <a href="https://github.com/AlexeyAB/darknet" target="_blank">Darknet</a> and <a href="https://www.cs.toronto.edu/~frossard/post/vgg16/?fbclid=IwAR0Kl_mBQtkEvE7IR2ATRFnW3lcCSvMatkmo1u2P8V4M3k_Us86viHPNRCc" target="_blank">VGG</a> models. Used <a href="https://pjreddie.com/darknet/yolo/" target="_blank">YOLO</a> algorithm to scan the image in real time and used python library scikit to blur part of an image given a bounding box. I worked on training CNN using YOLO algorithm.
+                        </p>
+                        <a href="https://github.com/justinyu9/Logo-Detector" target="_blank">Github</a>&emsp;<a href="images/144_report.pdf" target="_blank">Details</a>
+        
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/142_results.png" width="300" height="200" onclick="window.open(this.src)"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3><b>Movie-text Predictor</b> - Backend</h3>
+                        <p>
+                            Machine learning model that predicts if a movie review is rated "really negative", "negative", "neutral", "positive", or "really positive". Coded in Python using Sklearn library to test different models for highest accuracy and F measure. I worked on testing different models and found out SVM was the best model compared to other machine learning models. 
+                        </p>
+                        <a href="https://github.com/justinyu9/Movie-text-Predictor" target="_blank">Github</a>&emsp;<a href="images/142_report.pdf" target="_blank">Details</a>
+        
+                    </div>
+                    <!-- End .project-info -->
+                </div>
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/Finder.png" width="300" height="200" onclick="window.open(this.src)"/>
