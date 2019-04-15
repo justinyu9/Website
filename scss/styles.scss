@@ -302,7 +302,7 @@ footer {
 
     &:hover {
         color: $base-color;
-        background: blue;
+        background-color: #99d6ff;
         text-decoration: none;
     }
 }
@@ -998,4 +998,16 @@ footer {
         }
     }
 
+}
+
+// Research
+
+#research {
+    padding: 50px 15px;
+    text-align: center;
+    border-bottom: 1px solid $border;
+
+    h2 {
+        color: $heading;
+    }
 }
